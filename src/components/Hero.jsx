@@ -1,3 +1,5 @@
+import { ReactTyped } from "react-typed";
+
 import { heroSection } from "../data/constant";
 
 const Hero = () => {
@@ -13,12 +15,24 @@ const Hero = () => {
               <h1 className="text-center md:text-2xl lg:text-4xl lg:w-96 text-slate-300 lg:mb-6 lg:leading-10 py-2 font-bold">
                 {content.title}
               </h1>
-              <p className="text-center md:text-xl lg:w-96 lg:leading-10 md:w-56 md:mb-5 font-semibold text-gray-200 w-48 m-auto">
-                {content.description}
+              <p className="text-center text-xl lg:w-96 lg:leading-10 md:w-56 md:mb-5 max-xs:text-sm font-semibold text-gray-200 w-80 m-auto">
+                I'm a{" "}
+                <ReactTyped
+                  className="text-green-600"
+                  strings={[
+                    "Front-End Web Developer",
+                    "Front-End Mobile Developer",
+                    "Graphic Designer",
+                  ]}
+                  typeSpeed={80}
+                  backSpeed={50}
+                  loop
+                  backDelay={2000}
+                />
               </p>
 
               <div className="m-auto w-40 ">
-                <button className="my-4">
+                <button className="my-10">
                   <a
                     href="/Ebuka.pdf"
                     download="Ebuka-resume.pdf"
