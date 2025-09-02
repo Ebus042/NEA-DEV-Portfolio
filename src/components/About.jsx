@@ -17,7 +17,7 @@ const About = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex flex-col lg:flex-row items-center w-full  justify-between bg-slate-700 py-10"
+                className="flex flex-col lg:flex-row items-center w-full  justify-between bg-emerald-900 py-10"
               >
                 {/* <div className="bg-slate-600 rounded-md "> */}
                 <motion.p
@@ -25,7 +25,7 @@ const About = () => {
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeOut" }}
                   viewport={{ once: true, amount: 0.4 }}
-                  className=" bg-gray-700 lg:mx-0 hover:bg-slate-100 hover:text-gray-800 transition-all ease-in-out duration-500 lg:leading-10 lg:ml-8 rounded-xl lg:w-1/2 shadow-2xl lg:py-6 lg:px-8 lg:text-2xl leading-8 py-2 px-4 mx-10 text-gray-50"
+                  className=" bg-green-900 lg:mx-0 hover:bg-green-800 hover:text-gray-100 transition-all ease-in-out duration-500 lg:leading-10 lg:ml-8 rounded-xl lg:w-1/2 shadow-2xl lg:py-6 lg:px-8 lg:text-2xl leading-8 py-2 px-4 mx-10 text-gray-50"
                 >
                   {section.descriptions}
                 </motion.p>

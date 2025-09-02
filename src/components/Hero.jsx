@@ -6,7 +6,7 @@ import { heroSection } from "../data/constant";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-tr shadow-lg from-slate-700 to-gray-500 h-full pt-10">
+    <div className="bg-gradient-to-tr shadow-lg from-green-950 to-green-700 h-full pt-10">
       <div>
         {heroSection.map((content, id) => (
           <div
@@ -24,15 +24,11 @@ const Hero = () => {
                   {content.title}
                 </h1>
 
-                <p className="text-center text-xl lg:w-96 lg:leading-10 md:w-56 md:mb-5 xs:mx-0 max-xs:text-sm font-semibold text-gray-200 w-80 m-auto">
+                <p className="text-center  xl:text-2xl xl:w-full lg:w-96 lg:leading-10 md:w-56 md:mb-5 xs:mx-0 max-xs:text-sm font-semibold text-gray-200 w-96 m-auto">
                   I'm a{" "}
                   <ReactTyped
                     className="text-green-600"
-                    strings={[
-                      "Front-End Web Developer",
-                      "Front-End Mobile Developer",
-                      "Graphic Designer",
-                    ]}
+                    strings={["Front-End Web Developer", "Graphic Designer"]}
                     typeSpeed={80}
                     backSpeed={50}
                     loop
@@ -47,7 +43,7 @@ const Hero = () => {
                     <a
                       href="/Ebuka.pdf"
                       download="Ebuka-resume.pdf"
-                      className="bg-gray-500 hover:bg-slate-300 hover:text-gray-600 px-3 py-1 text-white font-semibold rounded-md"
+                      className="bg-emerald-700 hover:bg-green-500 hover:text-gray-100 px-3 py-1 text-white font-semibold rounded-md"
                     >
                       Download resume
                     </a>

@@ -59,7 +59,7 @@ import { socialMedia } from "../data/constant";
 
 const Footer = () => {
   return (
-    <footer className="mt-20 bg-gradient-to-tl from-slate-500 to-gray-900 py-1">
+    <footer className="mt-20 bg-gradient-to-tl from-emerald-700 to-green-900 py-1">
       <div>
         <h2 className="text-center text-white text-2xl py-6 font-bold">
           Let's Connect
