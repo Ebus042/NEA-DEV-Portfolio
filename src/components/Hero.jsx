@@ -1,6 +1,7 @@
 import { ReactTyped } from "react-typed";
 
 import { heroSection } from "../data/constant";
+// import TypingEffect from "./TypingEffect";
 
 const Hero = () => {
   return (
@@ -15,6 +16,7 @@ const Hero = () => {
               <h1 className="text-center md:text-2xl lg:text-4xl lg:w-96 text-slate-300 lg:mb-6 lg:leading-10 py-2 font-bold">
                 {content.title}
               </h1>
+
               <p className="text-center text-xl lg:w-96 lg:leading-10 md:w-56 md:mb-5 max-xs:text-sm font-semibold text-gray-200 w-80 m-auto">
                 I'm a{" "}
                 <ReactTyped
@@ -29,6 +31,8 @@ const Hero = () => {
                   loop
                   backDelay={2000}
                 />
+                {/* <p className="text-center md:text-xl lg:w-96 lg:leading-10 md:w-56 md:mb-5 font-semibold text-gray-200 w-48 m-auto">
+                <TypingEffect /> */}
               </p>
 
               <div className="m-auto w-40 ">
