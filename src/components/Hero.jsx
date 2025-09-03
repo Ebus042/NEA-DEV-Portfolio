@@ -1,7 +1,9 @@
 import { ReactTyped } from "react-typed";
 import { motion } from "framer-motion";
+import React from "react";
 
 import { heroSection } from "../data/constant";
+import { DownloadButton } from "./DownloadButton";
 // import TypingEffect from "./TypingEffect";
 
 const Hero = () => {
@@ -38,24 +40,14 @@ const Hero = () => {
                 <TypingEffect /> */}
                 </p>
 
-                <div className="m-auto w-40 ">
-                  <button className="my-10">
-                    <a
-                      href="/Ebuka.pdf"
-                      download="Ebuka-resume.pdf"
-                      className="bg-emerald-700 hover:bg-green-500 hover:text-gray-100 px-3 py-1 text-white font-semibold rounded-md"
-                    >
-                      Download resume
-                    </a>
-                  </button>
-                </div>
+                <DownloadButton />
               </motion.div>
             </div>
             <motion.div
               initial={{ x: 200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="relative flex items-center justify-center h-96 w-96 mt-10 
+              className="relative flex items-center justify-center h-96 w-96 lg:mt-10 
                before:border-8 before:border-green-200 
              before:border-t-transparent before:border-l-transparent
              before:animate-spin-slow
