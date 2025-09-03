@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="my-24 flex flex-col justify-center items-center">
+    <div className="my-20 flex flex-col justify-center items-center">
       <div>
         <div>
           {aboutMe.map((section, id) => (
             <div key={id}>
-              <h2 className="uppercase xl:text-4xl font-bold text-2xl text-center md:text-lg my-10 py-4">
+              <h2 className="uppercase xl:text-4xl font-bold text-red-300 text-2xl text-center md:text-lg my-10 py-4">
                 {section.title}
               </h2>
 
@@ -17,7 +17,7 @@ const About = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex flex-col lg:flex-row items-center w-full  justify-between bg-emerald-900 py-10"
+                className="flex flex-col xl:flex-row items-center w-full px-2 justify-evenly bg-emerald-900 pt-10"
               >
                 {/* <div className="bg-slate-600 rounded-md "> */}
                 <motion.p
@@ -25,22 +25,35 @@ const About = () => {
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeOut" }}
                   viewport={{ once: true, amount: 0.4 }}
-                  className=" bg-green-900 lg:mx-0 hover:bg-green-800 hover:text-gray-100 transition-all ease-in-out duration-500 lg:leading-10 lg:ml-8 rounded-xl lg:w-1/2 shadow-2xl lg:py-6 lg:px-8 lg:text-2xl leading-8 py-2 px-4 mx-10 text-gray-50"
+                  className=" bg-green-900 lg:mx-0 hover:bg-green-800
+                    hover:text-gray-100 transition-all ease-in-out duration-500 lg:leading-10 lg:ml-8 rounded-xl lg:w-1/2 shadow-2xl
+                    lg:py-4 lg:px-8 lg:text-2xl leading-8 py-2 px-2 mx-10 text-gray-50"
                 >
                   {section.descriptions}
                 </motion.p>
 
                 {/* </div> */}
-                <motion.img
-                  initial={{ x: -200, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 1, ease: "easeOut" }}
-                  viewport={{ once: true, amount: 0.5 }}
-                  loading="lazy"
-                  src={section.image}
-                  className="rounded-full lg:w-1/3 object-contain py-5"
-                  alt="Potrait image of Ebuka"
-                />
+                <div
+                  className="relative before:absolute before:content-[''] before:w-[19rem] before:h-[19rem]
+                  before:bottom-[3.5rem] before:rounded-full md:before:top-32 max-xs:before:w-72 max-xs:before:h-72 max-xs:before:top-[5.5rem]
+                  md:before:w-[24rem] md:before:h-[24rem]
+                  flex justify-center 
+                  before:bg-green-100 before:z-10
+                  after:absolute after:content-[''] after:w-[23rem] after:h-[23rem] after:-z-0 
+                  after:bottom-[1.6rem] after: after:rounded-full after:bg-emerald-200 max-xs:after:w-80 max-xs:after:h-80
+                  md:after:w-[27rem] md:after:h-[27rem]"
+                >
+                  <motion.img
+                    initial={{ x: -200, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    loading="lazy"
+                    src={section.image}
+                    className="object-center z-10"
+                    alt="Potrait image of Ebuka"
+                  />
+                </div>
               </motion.div>
             </div>
           ))}

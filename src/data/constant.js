@@ -7,27 +7,27 @@ import linkedInImg from "../assets/linkedIn.svg";
 
 export const navLinks = [
   {
-    href: "#home",
+    href: "home",
     label: "Home",
     id: 1,
   },
   {
-    href: "#about-me",
+    href: "about-me",
     label: "About Me",
     id: 2,
   },
   {
-    href: "#services",
+    href: "services",
     label: "Services",
     id: 3,
   },
   {
-    href: "#projects",
+    href: "projects",
     label: "Projects",
     id: 4,
   },
   {
-    href: "#contact",
+    href: "contact",
     label: "Contact Me",
     id: 5,
   },

@@ -11,11 +11,22 @@ function App() {
       <div>
         <Header />
         <main>
-          <Hero />
+          <div id="home">
+            {" "}
+            <Hero />{" "}
+          </div>
 
-          <About />
-          <Services />
-          <Contact />
+          <div id="about-me">
+            <About />
+          </div>
+          <div id="services">
+            {" "}
+            <Services />{" "}
+          </div>
+          <div id="contact">
+            {" "}
+            <Contact />{" "}
+          </div>
         </main>
         <footer>
           <Footer />

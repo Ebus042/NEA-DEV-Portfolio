@@ -43,7 +43,7 @@ const Services = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="grid grid-cols-1 py-4 gap-5 lg:gap-10 mx-10 md:grid md:grid-cols-2 xl:grid-cols-3"
         >
           {servicesSection.map((section, id) => (
@@ -62,12 +62,10 @@ const Services = () => {
               </h2>
               <ul>
                 {section.labels.map((label, id) => (
-                  // <div key={id}>
                   <li key={id} className="py-2 md:text-xl lg:3xl text-gray-100">
                     <span>✔️ </span>
                     {label}
                   </li>
-                  // </div>
                 ))}
               </ul>
             </motion.div>

@@ -60,6 +60,9 @@ import { socialMedia } from "../data/constant";
 const Footer = () => {
   return (
     <footer className="mt-20 bg-gradient-to-tl from-emerald-700 to-green-900 py-1">
+      <div className="text-white text-center py-5 font-bold text-3xl">
+        <h2>NEA-DEV</h2>
+      </div>
       <div>
         <h2 className="text-center text-white text-2xl py-6 font-bold">
           Let's Connect
@@ -124,6 +127,9 @@ const Footer = () => {
               </div>
             ))}
         </div>
+        <span className="text-gray-200 text-center flex justify-center py-5">
+          &copy; {new Date().getFullYear()} NEA-DEV. All Rights Reserved.
+        </span>
       </div>
     </footer>
   );
