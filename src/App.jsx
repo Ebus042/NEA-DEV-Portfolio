@@ -8,7 +8,7 @@ import Services from "./components/Services";
 function App() {
   return (
     <>
-      <div>
+      <div className="overflow-hidden">
         <Header />
         <main>
           <div id="home">
