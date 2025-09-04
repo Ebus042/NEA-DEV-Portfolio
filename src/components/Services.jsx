@@ -43,7 +43,7 @@ const Services = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
           className="grid grid-cols-1 py-4 gap-5 lg:gap-10 mx-10 md:grid md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3
           
           "
