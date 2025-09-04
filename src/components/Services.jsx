@@ -62,7 +62,7 @@ const Services = () => {
               >
                 {section.title}
               </h2>
-              <ul className="h-full  py-5">
+              <ul className="h-full py-5">
                 {section.labels.map((label, id) => (
                   <li
                     key={id}
