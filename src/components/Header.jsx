@@ -53,7 +53,7 @@ const Header = () => {
         </nav>
         <p
           onClick={() => setChange(!change)}
-          className="text-white text-xl cursor-pointer lg:hidden"
+          className="text-emerald-500 text-xl bg-white px-3 py-2 rounded-full cursor-pointer lg:hidden"
         >
           {change ? <FaTimes /> : <FaBars />}
         </p>

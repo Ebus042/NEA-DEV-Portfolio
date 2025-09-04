@@ -34,7 +34,7 @@ const cardVariants = (direction) => ({
 
 const Services = () => {
   return (
-    <div className="my-32">
+    <section className="my-32">
       <div>
         <h3 className="text-center font-bold my-10 text-2xl text-gray-700 lg:text-4xl lg:mb-10 ">
           Services I offer
@@ -72,7 +72,7 @@ const Services = () => {
           ))}
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

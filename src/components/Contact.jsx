@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="py-14 container text-center mx-auto">
+    <section className="py-14 container text-center mx-auto">
       <h2 className="text-center text-4xl font-sans text-gray-600 mb-12">
         Contact Us
       </h2>
@@ -65,17 +65,17 @@ const Contact = () => {
           placeholder="Enter Your Message"
         ></textarea>
 
-        <div>
+        <div className="">
           <button
             type="submit"
-            className="bg-emerald-500 hover:bg-emerald-600 hover:text-gray-100 px-3 py-2 text-white font-semibold rounded-md"
+            className="bg-emerald-500 transition-all duration-500 ease-in-out hover:bg-emerald-700 shadow-md hover:text-gray-100 px-3 py-2 text-white font-semibold rounded-md"
           >
             Send Message
           </button>
         </div>
       </form>
       {status && <p className="mt-4 text-gray-700">{status}</p>}
-    </div>
+    </section>
   );
 };
 

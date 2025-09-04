@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="my-20 flex flex-col justify-center items-center">
+    <section className="my-20 flex flex-col justify-center items-center">
       <div>
         <div>
           {aboutMe.map((section, id) => (
@@ -38,9 +38,9 @@ const About = () => {
                   before:bottom-[3.5rem] before:rounded-full md:before:top-32 max-xs:before:w-72 max-xs:before:h-72 max-xs:before:top-[5.5rem]
                   md:before:w-[24rem] md:before:h-[24rem]
                   flex justify-center 
-                  before:bg-green-100 before:z-10
+                  before:bg-emerald-100 before:z-10
                   after:absolute after:content-[''] after:w-[23rem] after:h-[23rem] after:-z-0 
-                  after:bottom-[1.6rem] after: after:rounded-full after:bg-emerald-200 max-xs:after:w-80 max-xs:after:h-80
+                  after:bottom-[1.6rem] after: after:rounded-full after:bg-green-200 max-xs:after:w-80 max-xs:after:h-80
                   md:after:w-[27rem] md:after:h-[27rem]"
                 >
                   <motion.img
@@ -59,7 +59,7 @@ const About = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

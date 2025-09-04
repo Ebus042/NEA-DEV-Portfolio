@@ -8,7 +8,7 @@ import { DownloadButton } from "./DownloadButton";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-tr shadow-lg from-green-950 to-green-700 lg:h-[40rem] pt-10">
+    <section className="bg-gradient-to-tr shadow-lg from-green-950 to-green-700 lg:h-[40rem] pt-10">
       <div>
         {heroSection.map((content, id) => (
           <div
@@ -72,7 +72,7 @@ const Hero = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
