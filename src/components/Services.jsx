@@ -34,9 +34,9 @@ const cardVariants = (direction) => ({
 
 const Services = () => {
   return (
-    <section className="my-32">
+    <section className="my-44">
       <div>
-        <h3 className="text-center font-bold my-10 text-2xl text-gray-700 lg:text-4xl lg:mb-10 ">
+        <h3 className="text-center font-bold my-32 text-2xl text-gray-700 lg:text-4xl">
           Services I offer
         </h3>
         <motion.div
@@ -44,7 +44,9 @@ const Services = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          className="grid grid-cols-1 py-4 gap-5 lg:gap-10 mx-10 md:grid md:grid-cols-2 xl:grid-cols-3"
+          className="grid grid-cols-1 py-4 gap-5 lg:gap-10 mx-10 md:grid md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3
+          bg-green-100
+          "
         >
           {servicesSection.map((section, id) => (
             <motion.div
@@ -55,12 +57,12 @@ const Services = () => {
               className="bg-green-900 h-full flex flex-col px-4 rounded-lg shadow-lg"
             >
               <h2
-                className="flex w-64 max-xs:w-56 max-xs:text-sm md:w-72 md:text-xl lg:text-xl font-bold lg:w-full xl:max-w-full xl:text-2xl
+                className="flex w-64 max-xs:w-56 max-xs:text-sm md:w-72 md:text-lg lg:text-lg font-bold lg:w-96 xl:max-w-full xl:text-2xl
                text-white py-1 px-2 rounded-md m-auto items-center justify-center my-5 bg-emerald-500"
               >
                 {section.title}
               </h2>
-              <ul>
+              <ul className="h-full py-5">
                 {section.labels.map((label, id) => (
                   <li key={id} className="py-2 md:text-xl lg:3xl text-gray-100">
                     <span>✔️ </span>

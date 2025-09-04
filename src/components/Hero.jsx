@@ -26,7 +26,7 @@ const Hero = () => {
                   {content.title}
                 </h1>
 
-                <p className="text-center xl:text-2xl xl:w-full lg:w-96 lg:leading-10 md:w-56 md:mb-5 max-xs:text-sm font-semibold text-gray-200 w-96 m-auto">
+                <p className="text-center xl:text-2xl xl:w-full lg:w-96 lg:leading-10 md:w-72 md:mb-5 max-xs:text-sm font-semibold text-gray-200 w-full m-auto">
                   I'm a{" "}
                   <ReactTyped
                     className="text-red-200"

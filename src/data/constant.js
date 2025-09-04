@@ -35,7 +35,7 @@ export const navLinks = [
 
 export const heroSection = [
   {
-    title: "My Name is Nwafor Ebuka Augustine",
+    title: "Code with Nwafor Ebuka Augustine",
     description: "I'm a Front-End Web/Mobile Developer.",
     image: heroImg,
   },

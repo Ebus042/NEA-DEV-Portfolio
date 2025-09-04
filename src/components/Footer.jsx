@@ -106,9 +106,7 @@ const Footer = () => {
                   <h3 className="text-lg text-white font-semibold mb-2">
                     Address
                   </h3>
-                  <address className="w-48 text-white">
-                    {contact.location}
-                  </address>
+                  <span className="w-48 text-white">{contact.location}</span>
                 </div>
 
                 <div className="text-white">
@@ -117,10 +115,9 @@ const Footer = () => {
                     href={contact.href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="text-red-500 hover:text-blue-900 underline"
                   >
-                    <p className="text-red-500 hover:text-blue-900 underline">
-                      {contact.email}
-                    </p>
+                    {contact.email}
                   </a>
                   <p>{contact.phoneNumber}</p>
                 </div>

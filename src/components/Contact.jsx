@@ -33,8 +33,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-14 container text-center mx-auto">
-      <h2 className="text-center text-4xl font-sans text-gray-600 mb-12">
+    <section className="py-14 container text-center mx-auto my-[14rem]">
+      <h2 className="text-center text-4xl font-sans text-gray-600 my-[6rem]">
         Contact Us
       </h2>
 
