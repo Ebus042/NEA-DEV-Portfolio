@@ -45,7 +45,7 @@ const Services = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           className="grid grid-cols-1 py-4 gap-5 lg:gap-10 mx-10 md:grid md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3
-          bg-green-100
+          
           "
         >
           {servicesSection.map((section, id) => (
@@ -62,9 +62,12 @@ const Services = () => {
               >
                 {section.title}
               </h2>
-              <ul className="h-full py-5">
+              <ul className="h-full  py-5">
                 {section.labels.map((label, id) => (
-                  <li key={id} className="py-2 md:text-xl lg:3xl text-gray-100">
+                  <li
+                    key={id}
+                    className="py-2 md:text-xl lg:3xl text-gray-100 "
+                  >
                     <span>✔️ </span>
                     {label}
                   </li>
