@@ -58,7 +58,7 @@ const About = () => {
                     initial={{ x: -200, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.3 }}
                     loading="lazy"
                     src={section.image}
                     className="object-center z-10"
