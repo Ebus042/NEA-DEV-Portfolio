@@ -62,6 +62,7 @@ const Hero = () => {
               <motion.img
                 src={content.image}
                 alt="Potrait image of Ebuka"
+                loading="lazy"
                 initial={{ x: 200, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}

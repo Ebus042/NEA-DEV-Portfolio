@@ -55,11 +55,15 @@ const Header = () => {
           <h2>NEA-DEV</h2>
         </div>
         <nav>
-          <ul className="hidden lg:flex justify-center xl:text-xl xl:gap-8 items-center cursor-pointer text-white text-lg gap-5">
+          <ul
+            className="hidden lg:flex justify-center xl:text-xl 
+          xl:gap-8 items-center cursor-pointer text-white text-lg gap-5"
+          >
             {navLinks.map((link) => (
               <li
                 key={link.id}
-                className="hover:text-emerald-200 hover:scale-125 transition-all ease-in-out duration-500"
+                className="hover:text-emerald-200 hover:scale-125 
+                transition-all ease-in-out duration-500"
               >
                 <Link
                   to={link.href}
