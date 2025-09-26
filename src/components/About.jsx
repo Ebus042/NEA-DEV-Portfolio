@@ -59,7 +59,7 @@ const About = () => {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.3 }}
-                    loading="lazy"
+                    // loading="lazy"
                     src={section.image}
                     className="object-center z-10"
                     alt="Potrait image of Ebuka"
