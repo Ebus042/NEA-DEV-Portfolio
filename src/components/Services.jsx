@@ -34,7 +34,7 @@ const cardVariants = (direction) => ({
 
 const Services = () => {
   return (
-    <section className="my-44 overflow-hidden">
+    <section className="my-36 overflow-hidden">
       <div>
         <h3 className="text-center font-bold my-32 text-2xl text-gray-700 lg:text-4xl">
           Services I offer
